@@ -1,39 +1,7 @@
 .landing{
-    background-image:url(assets/piz5.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 650px;
-    color:black;
-    padding-top:220px;
-}
-#deliver{
-    background-color: blueviolet;
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius:20px;
-  }
-#menu{
-    align-items: center;
-    justify-content: space-between;
-    
-}
-#menu img{
-    background-size: cover;
-}
-#offer{
-    background-image: url(assets/piz8.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height:500px;
-    text-align: center;
-    padding-top: 200px; 
-    font-size: 40px;   
+  background-image: url(assets/piz5);
+  background-size: cover;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
