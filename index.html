@@ -13,15 +13,30 @@
     
 </head>
 <body>
+
 <div class="container">
-    <div class="landing">
+    <div class="landing" style="background-image: url(assets/piz5.jpg)">
+        <div class="header">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ORDER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                  </li>
+            </ul>
+            </div>
         <h1 style="text-align:center">CRUSTYKRAB PIZZA</h1>
         <h1 style="text-align:center">Lets order some crusty pizza</h1>
-        <!-- image with small clickable icons-->
         <div class="col-auto">
-
-        <button id="deliver">WE DELIVER!</button></div>
-        <br><br>
+            <button id="deliver">WE DELIVER!</button>
+        </div>
     </div>
     <br><br>
 
@@ -31,28 +46,31 @@
             <h1 style="text-align:center">CRUSTYKRAB</h1>
             <p style="text-align:center">Here at <span>CRUSTYKRAB</span> we delight ourselves in providing the best
              pizza We believe in staying at the cutting edge of industry <br> standards through consistent innovation.
+             <br> We take pride in making a perfect pizza and providing courteous and helpful service on time all the time. 
+             Every customer says, <span>"I'll be back!</span> We are the employer of choice offering team members 
+             opportunities for growth, advancement, and rewarding careers in a fun, safe working environment.
             </p>        
         </div>
      </div>
-     <div class= "container fluid">
-         
+     <div class= "container-fluid container">    
          <div class="menu" id="menu">
-            <h1 style="text-align:center">MENU</h1>
+            <h1 style="text-align:center d-flex align-items-center font:250px">MENU</h1>
+            <p>Our <strong>Menu:</strong> has the Best pizza in the world. Just take a look at our menu</p>
             <div class="row">
-            <div class="col-sm-3 p-4 bg-dark text-white">
+            <div class="col-sm-4 p-4 bg-dark text-white">
                 <h1>Margherita Pizza</h1>
                 <p>A genuine Margherita is made with tomato, sliced mozzarella, basil and extra-virgin olive oil. </p>
                 <img src="assets/piz.jpg" alt="Margherita" height="350px" width="300px">
                 <button id="order">ORDER</button>
             </div>
-            <div class="col-sm-3 p-4 bg-dark text-white">
+            <div class="col-sm-4 p-4 bg-dark text-white">
                 <h1>Pepperoni Pizza</h1>
                 <p>Lots of pepperoni, and lots of cheese! </p>
                 <img src="assets/piz2.jpg" alt="Margherita" height="350px" width="300px">
                 <button id="order">ORDER</button>
             </div>
             
-            <div class="col-sm-3 p-4 bg-dark text-white">
+            <div class="col-sm-4 p-4 bg-dark text-white">
                 <h1>Supreme Pizza</h1>
                 <p>It’s gotta have at least TWO meats. Otherwise, it’s just another pizza….😉</p>
                 <img src="assets/piz1.jpg" alt="Margherita" height="350px" width="300px">
@@ -61,20 +79,20 @@
             </div>
                  <br>
              <div class="row">
-            <div class="col-sm-3 p-4 bg-dark text-white">
+            <div class="col-sm-4 p-4 bg-dark text-white">
                 <h1>Hawaiian (Ham & Pineapple) Pizza</h1>
                 <p>If you think you don’t like Hawaiian pizza, that’s because you haven’t tried homemade! I used to be one of “those people”…😂 </p>
                 <img src="assets/piz.jpg" alt="Margherita" height="350px" width="300px">
                 <button id="order">ORDER</button>
             </div>
-            <div class="col-sm-3 p-4 bg-dark text-white">
+            <div class="col-sm-4 p-4 bg-dark text-white">
                 <h1>BBQ Meatlovers Pizza</h1>
                 <p>You don’t even need to use a fancy BBQ sauce here. Any generic store bought BBQ sauce is fine – this one is all about the toppings!</p>
                 <img src="assets/piz3.jpg" alt="Margherita" height="350px" width="300px">
                 <button id="order">ORDER</button>
             </div>
             
-            <div class="col-sm-3 p-4 bg-dark text-white">
+            <div class="col-sm-4 p-4 bg-dark text-white">
                 <h1>Garlic butter prawns and chilli Pizza</h1>
                 <p>Huge Aussie favourite, a pizza topped with garlic prawns AND finished with a drizzle of garlic butter. Heaven in the form of a pizza!
 
@@ -84,17 +102,155 @@
             </div>
             </div>
          </div>
-     </div>        
-    <br><br>
-    <div class="offer" id="offer">
+     </div>   
+     
+     <div class="container mt-3">           
+        
+            <br><br>
+            
+    <div class="offer" style="background-image: url(assets/piz4.jpg)">
         <h1>Coming Soon</h1>   
         <h5>Cheese Margherita</h5></h5>  
         <p>The Cheese Margherita you've been  waiting for </p>       
         
     </div>
-    <div class="contact">
-        <div class="bg-dark text-center text-white">
-         <h1>We value your feedback</h1>
+    
+    <div class="container-fluid container bg-dark text-white">
+        <div class="order">
+            <h2 style="font-size:48px align-items:center; font-weight:bold">Do you want to take home <strong>HAPPINESS</strong> </h2>
+            <form
+        onsubmit="return handleData()" method="post" action="https://postman-echo.com/post">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputName">Full Name</label>
+            <input type="name" class="form-control" id="inputName" placeholder="Full Name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+          <label for="inputPhone">Your Phone Number</label>
+          <input type="number" class="form-control" id="inputPhone" placeholder="+254000000000">
+        </div>
+
+        <div class="p-2">
+            
+            Select the type of crust you want to have:
+            <div style="visibility:hidden; color:red; " id="chk_option_error">
+            Please select at least one option.
+            </div>
+            <div>
+            <input type="checkbox" name="crust[]" id="crust_crispy" value="Crispy" checked> <label for="crust_crispy">Crispy</label>
+            </div>
+            <div>
+            <input type="checkbox" name="crust[]" id="crust_stuffed" value="Stuffed"> <label for="crust_stuffed">Stuffed</label>
+            </div>
+            <div>
+            <input type="checkbox" name="crust[]" id="crust_glutenfree" value="Gluten Free" checked> <label for="crust_glutenfree">Gluten Free"</label>
+            </div>
+            <div>
+            <input type="checkbox" name="crust[]" id="crust_cheese" value="Cheese"> <label for="crust_cheese">Cheese</label>
+            </div>
+            <div>
+            
+            <select id="size" name="Size">
+                <option value="large">Large</option>
+                <option value="medium">Medium</option>
+                <option value="small">Small</option>
+              </select>
+              <br><br>
+              <div class="container mt-4">
+                <div class="row">
+                  <div class="col-6 row-heading">
+                    TakeAway
+                  </div>
+                  <div class="col-3 row-heading">
+                    Quantity
+                  </div>
+                  <div class="col-2 row-heading">
+                    Price
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    Margherita Pizza
+                  </div>
+                  <div class="col-3">
+                    <input type="number" value="0" class="qty" id="qty_margherita"/>
+                  </div>
+                  <div class="col-2">
+                    <input type="number" readonly value="0" id="price_margherita"/>
+                  </div>
+                </div>
+                
+                 <div class="row my-3">
+                  <div class="col-6">
+                    Pepperoni 
+                  </div>
+                  <div class="col-3">
+                    <input type="number" value="0" class="qty" id="qty_pepperoni"/>
+                  </div>
+                  <div class="col-2">
+                    <input type="number" readonly value="0" id="price_pepperoni"/>
+                  </div>
+                </div>
+                
+                <div class="row my-3">
+                  <div class="col-6">
+                    Supreme Pizza
+                  </div>
+                  <div class="col-3">
+                    <input type="number" class="qty" value="0" id="qty_supreme"/>
+                  </div>
+                  <div class="col-2">
+                    <input type="number" readonly value="0" id="price_supreme"/>
+                  </div>
+                </div>
+                
+                <div class="row my-3">
+                  <div class="col-6">
+                    Hawaiian (Ham & Pineapple) Pizza
+                  </div>
+                  <div class="col-3">
+                    <input type="number" class="qty" value="0" id="qty_hawaiian"/>
+                  </div>
+                  <div class="col-2">
+                    <input type="number" readonly value="0" id="price_hawaiian"/>
+                  </div>
+                </div>
+                
+                <div class="row my-4">
+                  <div class="col-9 text-right total">
+                   Total
+                  </div>
+                  
+                  <div class="col-2 total-val">
+                    <span id="total_value">0</span
+                  </div>
+                </div>
+                
+              </div>
+          
+              <input type="submit" name="submit" value="Deliver"/>
+            </form>
+
+        </div>
+    </div>
+            
+            </div>       
+    
+            <div class="contact">
+       
+                <div class="bg-dark text-center text-white">
+        
+                    <h1>We value your feedback</h1>
          <form action="#">
              <div class="mb-3 mt-3">
                <label for="name" class="form-label">Name:</label>
@@ -153,7 +309,7 @@
       </div>
       <!--Grid row-->
     </form>
-  </section>
+  </section> -->
   <!-- Section: Form -->
 
   <!-- Section: Text -->
@@ -194,7 +350,10 @@
 <!-- Copyright -->
 </footer>
 <!-- Footer -->
-    </div>
-  
+    </div>  
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
