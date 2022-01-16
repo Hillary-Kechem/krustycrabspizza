@@ -1,7 +1,25 @@
 .landing{
-  background-image: url(assets/piz5);
+  background-image: url(assets/piz);
   background-size: cover;
   height: 550px;
   background-repeat: no-repeat;
   background-position: center;
+}
+#menu img{
+  height: 250px;
+  width:200px;
+
+}
+.offer{
+  background-image: url(assets/piz4);
+  background-size: cover;
+  height:550px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding-top:200px;
+  font-size: 50px;
+  color: whitesmoke;
+
+  
 }
