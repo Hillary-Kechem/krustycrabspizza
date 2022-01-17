@@ -34,9 +34,7 @@
             </div>
         <h1 style="text-align:center">CRUSTYKRAB PIZZA</h1>
         <h1 style="text-align:center">Lets order some crusty pizza</h1>
-        <div class="col-auto">
-            <button id="deliver">WE DELIVER!</button>
-        </div>
+        
     </div>
     <br><br>
 
@@ -246,7 +244,33 @@
         </div>
         <div class="row-4">
           <div class=" col-8 text-right" id="deliver">
-            <button type="button" class="btn btn-primary btn-sm">DELIVER ME</button>
+            
+              <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deliverModal">
+  Deliver
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="deliverModal" tabindex="-1" aria-labelledby="deliverModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deliverModalLabel">Delivery Fee</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Hello, to deliver to outside CBD has a transport fee of ksh250
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+              <p id= "text">text</p>
+
+    
             
 
         </div>
