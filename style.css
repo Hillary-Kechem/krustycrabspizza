@@ -5,9 +5,8 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-#menu img{
-  height: 250px;
-  width:200px;
+.menu h1{
+  color: blue;
 
 }
 .offer{
@@ -19,7 +18,29 @@
   text-align: center;
   padding-top:200px;
   font-size: 50px;
-  color: whitesmoke;
+  color: whitesmoke;  
+}
 
+
+.total
+{
+  font-size:2rem;
+  font-weight:bold;
+}
+.total-val
+{
+  font-size:2rem;
   
 }
+
+button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
